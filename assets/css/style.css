@@ -1,7 +1,9 @@
+/********* Global *********************/
 :root {
     --brand-color: #C14953;
     --primary-text-color: #FAF9F6;
     --bg-color: #ABA9BF;
+    --navbar-color: #353B3C;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
     color: var(--primary-text-color);
 }
 
+/********* Navbar *********************/
 #mainNavbar {
     font-size: 1.2rem;
     font-weight: 100;
@@ -27,10 +30,9 @@ body {
 
 #mainNavbar .nav-link:hover {
     color: var(--brand-color);
-    transform: scale(1.2);
 }
 
-
+/********* Header/Hero *********************/
 .masthead {
     margin-top: 10px;
 }
@@ -49,27 +51,34 @@ body {
     background-color: var(--brand-color);
     border-radius: 8px;
     margin-bottom: 1rem;
-    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.1) !important;  
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.1);  
 }
 
 .portfolio-image {
     width: 100%;
     border-radius: 8px;
     border: 1px solid var(--primary-text-color);
-    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.5);
 }
 
 #resume {
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1); 
+    transition: 0.5s;
 }
 
 #resume:hover {
     color: var(--brand-color) !important;
     background-color: var(--primary-text-color);
-    border-color: var(--brand-color)
+    border-color: var(--brand-color);
+    box-shadow: 0 0.5em 0.5em -0.4em var(black);
+    transform: translateY(-0.1em);
 }
 
+.navbar.scrolled {
+    background-color: var(--navbar-color);
+    transition: background 0.3s;
+}
 
 
 
