@@ -6,7 +6,7 @@
 
 body {
     background: var(--bg-color);
-    font-family: "IBM Plex Sans JP", sans-serif;
+    font-family: "Space Mono", sans-serif;
     color: var(--primary-text-color);
 }
 
@@ -36,20 +36,43 @@ body {
 }
 
 .jumbotron {
-    background: linear-gradient(to top, rgba(171, 169, 191, 0) 0%, rgba(171, 169, 191, 0.5) 75%, #ABA9BF 100%), url(../images/hero-image.jpg);
-    height: calc(90vh - 35px);
+    background: linear-gradient(to top, rgba(171, 169, 191, 0.1) 0%, rgba(171, 169, 191, 0.5) 75%, #ABA9BF 100%), url(../images/hero-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 2px solid white;
 }
 
 .lead {
-    padding: 10px;
+    padding: 0.5rem 1rem;
     font-size: 1.2rem;
+    transition: color 1s ease-in;
+    font-weight: 800;
+    background-color: var(--brand-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.1) !important;
 }
+
 .portfolio-image {
     width: 100%;
     border-radius: 8px;
-    border: 2px solid var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
     box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.2) !important;
 }
+
+#resume {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+#resume:hover {
+    color: var(--brand-color) !important;
+    background-color: var(--primary-text-color);
+    border-color: var(--brand-color)
+}
+
+
+
+
+
