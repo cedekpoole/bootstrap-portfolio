@@ -22,3 +22,7 @@ body {
     color: var(--brand-color);
 }
 
+.masthead {
+    margin-top: 60px;
+}
+
