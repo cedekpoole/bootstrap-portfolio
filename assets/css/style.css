@@ -1,0 +1,24 @@
+:root {
+    --brand-color: #C14953;
+}
+
+body {
+    background: #ABA9BF;
+    font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+#mainNavbar .navbar-brand {
+    color: var(--brand-color);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link:hover {
+    color: var(--brand-color);
+}
+
