@@ -3,7 +3,9 @@
     --brand-color: #C14953;
     --primary-text-color: #FAF9F6;
     --bg-color: #E8D6CB;
-    --navbar-color: #353B3C;
+    --dark-color: #353B3C;
+    /* --dark-color in rgb tas means to place an alpha value on it */
+    --dark-color-rgb: 53,59,60; 
 }
 
 body {
@@ -73,7 +75,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: var(--navbar-color);
+    background-color: var(--dark-color);
     transition: background 0.3s;
 }
 
@@ -82,8 +84,23 @@ body {
 /* Work/Project section */
 
 .subHeading {
-    background-color: var(--brand-color);
     width: 40%;
-    border: 2px solid var(--navbar-color);
-    border-radius: 8px;
+    border: 2px solid var(--brand-color);
+    border-radius: 4px;
+    background-color: rgba(var(--dark-color-rgb), 0.1);
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.4);
+    color: var(--dark-color);
+}
+
+.project-image {
+    border: 3px solid var(--dark-color);
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1); 
+    border-radius: 4px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.project-image:hover {
+    transform: scale(1.01);
+    opacity: 0.7;
 }
