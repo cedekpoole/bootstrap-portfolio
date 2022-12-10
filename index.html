@@ -15,10 +15,6 @@
     <!-- Google Fonts-->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=IBM Plex Sans JP"
-    />
-    <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Space Mono"
     />
     <title>Bootstrap Portfolio</title>
@@ -49,13 +45,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">PROJECTS</a>
+            <a href="#projects" class="nav-link">PROJECTS</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">CONTACT</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">ABOUT</a>
+            <a href="#about-me" class="nav-link">ABOUT</a>
           </li>
         </ul>
       </div>
@@ -68,12 +64,15 @@
             <div class="col-lg-6 mx-auto">
               <div class="">
                 <div class="card-body d-flex flex-column text-center">
-                  <h5 class="display-4">Portfolio</h5>
+                  <h5 class="display-4 pb-3">Portfolio</h5>
                   <p class="header-text card-text">
                     Welcome to my portfolio! My name is Cameron and I am an
                     aspiring front-end web developer! :)
                   </p>
-                  <a href="#" id="resume" class="btn btn-xl js-scroll-trigger text-white border"
+                  <a
+                    href="#"
+                    id="resume"
+                    class="btn btn-xl js-scroll-trigger text-white border"
                     >My Resume</a
                   >
                 </div>
@@ -92,21 +91,32 @@
     </header>
     <main>
       <section id="projects">
-        <div class="container">
+        <div class="container-fluid text-center p-4 d-flex flex-column">
+          <h2 class="subHeading py-2 align-self-center">Projects</h2>
           <div class="row">
-            <div class="col-1">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptatum voluptate quaerat laudantium laborum aut ducimus aperiam aliquid excepturi magnam doloribus a necessitatibus dignissimos quas, accusantium ipsum illum iure soluta?
-              Esse exercitationem blanditiis nam eius perspiciatis commodi. Consequuntur delectus corporis quibusdam nobis corrupti fugiat voluptate hic nostrum at eius provident non quis perspiciatis, culpa, repellendus cumque quasi! Nostrum, vitae ad!
-              Vero adipisci voluptates incidunt iusto corrupti beatae molestias recusandae nam culpa a quae, tempore ullam illum non iste, fuga assumenda tenetur? Quos, dolor error molestias sint laboriosam ad eum ex.
-              Cum magni nihil perferendis voluptatibus officiis eveniet ut fugiat blanditiis fugit nisi architecto pariatur consequuntur repellat est amet, adipisci cupiditate tenetur reprehenderit error id illo nostrum quibusdam! Praesentium, rem quasi?
-              Atque distinctio itaque magni excepturi optio quia animi blanditiis vitae doloremque pariatur rem sint autem sit aliquid illum nam quam, in soluta. At facere labore quas laboriosam sed natus omnis.
-              Omnis quaerat cupiditate magnam voluptate voluptas autem ea assumenda provident dignissimos eius! Repellat illum nesciunt similique delectus ea eos ratione, sunt hic nihil, officiis, velit maxime reiciendis ut ad cum?</p>
+            <div class="col-6">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
-
+      <section id="contact">
+        <div class="container text-center d-flex flex-column">
+          <h2 class="subHeading py-2 align-self-center">Contact Me</h2>
+          <div class="row">
+            <div class="col-6">gijijgi</div>
+          </div>
+        </div>
+      </section>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -124,13 +134,12 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(function (){
-        $(document).scroll(function() {
+      $(function () {
+        $(document).scroll(function () {
           var $nav = $("#mainNavbar");
           $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        })
-      })
-
+        });
+      });
     </script>
   </body>
 </html>

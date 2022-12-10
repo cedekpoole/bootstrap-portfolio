@@ -2,7 +2,7 @@
 :root {
     --brand-color: #C14953;
     --primary-text-color: #FAF9F6;
-    --bg-color: #ABA9BF;
+    --bg-color: #E8D6CB;
     --navbar-color: #353B3C;
 }
 
@@ -33,9 +33,6 @@ body {
 }
 
 /********* Header/Hero *********************/
-.masthead {
-    margin-top: 10px;
-}
 
 .jumbotron {
     background: linear-gradient(to top, rgba(171, 169, 191, 0.1) 0%, rgba(171, 169, 191, 0.5) 75%, #ABA9BF 100%), url(../images/hero-image.jpg);
@@ -80,6 +77,13 @@ body {
     transition: background 0.3s;
 }
 
+/********* Main *********************/
 
+/* Work/Project section */
 
-
+.subHeading {
+    background-color: var(--brand-color);
+    width: 40%;
+    border: 2px solid var(--navbar-color);
+    border-radius: 8px;
+}
