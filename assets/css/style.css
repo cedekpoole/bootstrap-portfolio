@@ -4,8 +4,6 @@
   --light-color: #faf9f6;
   --bg-color: #e8d6cb;
   --dark-color: #353b3c;
-  /* --dark-color in rgb as means to place an alpha value on it */
-  --brand-color-rgb: 193, 73, 83;
 }
 
 body {
@@ -15,12 +13,14 @@ body {
 }
 
 a {
-    color: var(--dark-color);
+  color: var(--dark-color);
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
+  color: red;
 }
+
 /********* Navbar *********************/
 #mainNavbar {
   font-size: 1.2rem;
@@ -57,7 +57,7 @@ a:hover {
 }
 
 .heading {
-    color: var(--light-color);
+  color: var(--light-color);
 }
 .header-text {
   padding: 0.5rem 1rem;
@@ -99,42 +99,69 @@ a:hover {
 
 /* Work/Project section */
 
-.project-header {
-    font-size: 2.5rem;
-    text-align: center;
+.section-header {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.proj-img {
+    object-fit: cover;
+    height: 220px
+}
+.proj-img-sm {
+  height: 180px;
 }
 
-.proj-img {
-  object-fit: cover;
-  height: 216px;
-  outline: 1px solid var(--dark-color);
+.text-small {
+    font-size: 0.8rem;
 }
 
 .card {
   box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--dark-color);
+  border: 2px solid var(--dark-color);
   background-color: var(--light-color);
 }
 
 .project-link:hover {
-    opacity: 0.8;
-    transform: scale(1.03);
+  opacity: 0.8;
+  transform: scale(1.03);
 }
 
 #about-me {
   background-color: var(--dark-color);
   padding-bottom: 3rem;
+  color: var(--light-color);
 }
 
-.about-me-bg {
-  background-color: var(--brand-color);
+.about-me-color {
+  color: var(--light-color);
+}
+
+.cirle-shape {
+  color: var(--brand-color);
+  position: absolute;
+  margin-top: 6rem;
+  font-size: 10rem;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+.icons {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.icons:hover,
+.icons:focus {
+  opacity: 0.7;
+  transform: scale(1.3);
 }
 
 footer {
   width: 100%;
   height: 150px;
   background-image: url("../images/hero-image.jpg");
-  border-top: 2px solid var(--light-color);
+  border-top: 1px solid var(--light-color);
   background-size: cover;
   background-position: center;
 }

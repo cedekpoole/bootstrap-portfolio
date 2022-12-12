@@ -11,11 +11,17 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <!-- Own CSS file -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Google Fonts-->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Space Mono"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <title>Bootstrap Portfolio</title>
   </head>
@@ -57,7 +63,7 @@
       </div>
     </nav>
     <!--Header/Hero image-->
-    <header class="masthead mb-4">
+    <header class="masthead mb-2">
       <div class="jumbotron jumbotron-fluid mb-1">
         <div class="container">
           <div class="row mb-3 mt-4 h-100 align-items-center">
@@ -81,7 +87,7 @@
             <div class="col-md-9 col-lg-6 mx-auto">
               <img
                 src="assets/images/profile-picture.jpg"
-                alt=""
+                alt="Me, driving a boat on a lake"
                 class="portfolio-image"
               />
             </div>
@@ -95,7 +101,10 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
-              <div class="project-header mb-4">Previous Projects</div>
+              <div class="section-header mb-4">
+                <i class="fa-regular fa-folder-open ml-3"></i><br />Previous
+                Projects
+              </div>
             </div>
           </div>
           <div class="row match-height">
@@ -183,9 +192,13 @@
                           <p class="card-text">
                             A portfolio page made by HTML and vanilla CSS
                           </p>
-                          <button type="button" class="btn btn-success">
-                            Go to site ->
-                          </button>
+                          <a
+                            href="https://cedekpoole.github.io/portfolio-page/"
+                            target="_blank"
+                            ><button type="button" class="btn btn-success">
+                              Go to site ->
+                            </button></a
+                          >
                         </div>
                       </div>
                     </div>
@@ -205,9 +218,13 @@
                           <p class="card-text">
                             Refactored existing code to improve accessibility
                           </p>
-                          <button type="button" class="btn btn-danger">
-                            See it here ->
-                          </button>
+                          <a
+                            href="https://cedekpoole.github.io/code-refactor-challenge/"
+                            target="_blank"
+                            ><button type="button" class="btn btn-danger">
+                              See it here ->
+                            </button></a
+                          >
                         </div>
                       </div>
                     </div>
@@ -217,7 +234,7 @@
                       <img
                         class="img-fluid proj-img w-100"
                         src="assets/images/project1.jpg"
-                        alt="Card image cap"
+                        alt="the refactoring process"
                       />
                     </div>
                   </div>
@@ -227,18 +244,20 @@
           </div>
           <div class="row mb-5">
             <!-- CARD 3 -->
-            <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <div class="col-xl-3 col-md-6 col-12 mb-3">
               <div class="card h-100 project-link">
-                <a href=""
+                <a
+                  href="https://cedekpoole.github.io/prework-study-guide/"
+                  target="_blank"
                   ><div class="card-content">
                     <img
                       src="assets/images/project2.jpg"
-                      alt=""
-                      class="card-img-top img-fluid proj-img"
+                      alt="a study guide book"
+                      class="card-img-top img-fluid proj-img proj-img-sm"
                     />
                     <div class="card-body">
                       <h4 class="card-title">Web Dev Study Guide</h4>
-                      <p class="card-text">
+                      <p class="card-text text-small">
                         Helpful notes created through HTML, CSS and Javascript
                       </p>
                     </div>
@@ -247,18 +266,20 @@
               </div>
             </div>
             <!-- CARD 4 -->
-            <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <div class="col-xl-3 col-md-6 col-12 mb-3">
               <div class="card h-100 project-link">
-                <a href=""
+                <a
+                  href="https://cedekpoole.github.io/box-model-practice/"
+                  target="_blank"
                   ><div class="card-content">
                     <img
                       src="assets/images/project3.png"
-                      alt=""
-                      class="card-img-top img-fluid proj-img"
+                      alt="different colored shapes"
+                      class="card-img-top img-fluid proj-img proj-img-sm"
                     />
                     <div class="card-body">
                       <h4 class="card-title">Box Model Practice</h4>
-                      <p class="card-text">
+                      <p class="card-text text-small">
                         Completion of a task given by freecodecamp.com
                       </p>
                     </div>
@@ -267,18 +288,18 @@
               </div>
             </div>
             <!-- CARD 5 -->
-            <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <div class="col-xl-3 col-md-6 col-12 mb-3">
               <div class="card h-100 project-link">
-                <a href=""
+                <a href="https://en.wikipedia.org/wiki/Dog" target="_blank"
                   ><div class="card-content">
                     <img
                       src="assets/images/dog.jpg"
-                      alt=""
-                      class="card-img-top img-fluid proj-img"
+                      alt="a dog"
+                      class="card-img-top img-fluid proj-img proj-img-sm"
                     />
                     <div class="card-body">
                       <h4 class="card-title">Project Dog</h4>
-                      <p class="card-text">
+                      <p class="card-text text-small">
                         This is a very important project involving dogs
                       </p>
                     </div>
@@ -287,18 +308,18 @@
               </div>
             </div>
             <!-- CARD 6 -->
-            <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <div class="col-xl-3 col-md-6 col-12 mb-3">
               <div class="card h-100 project-link">
-                <a href=""
+                <a href="https://en.wikipedia.org/wiki/Cat" target="_blank"
                   ><div class="card-content">
                     <img
                       src="assets/images/cat.jpg"
-                      alt=""
-                      class="card-img-top img-fluid proj-img"
+                      alt="a cat with toilet roll on their head"
+                      class="card-img-top img-fluid proj-img proj-img-sm"
                     />
                     <div class="card-body">
                       <h4 class="card-title">Project Cat</h4>
-                      <p class="card-text">
+                      <p class="card-text text-small">
                         This is also a very important project
                       </p>
                     </div>
@@ -313,10 +334,19 @@
       <section id="about-me">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-lg-7 my-5">
-              <div class="card-body about-me-bg border">
-                <div class="card-title text-center">About Me</div>
-                <p class="card-text">
+            <div class="col-12">
+              <i class="cirle-shape fa-sharp fa-solid fa-circle"></i>
+            </div>
+            <div class="col-12">
+              <div class="section-header text-white mt-4 mb-3">
+                <i class="fa-solid fa-address-card"></i><br />About Me
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 col-lg-3 p-0 ml-5 mr-sm-5">
+              <div class="card-body border">
+                <p class="card-text pt-3">
                   I am a recent Philosophy graduate who has an affinity for
                   problem solving. While I very much enjoy analysing continental
                   philosophy, I am seeking a new adventure in a completely
@@ -327,9 +357,70 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-lg-5 my-lg-5">
+            <div class="col-12 col-lg-7">
               <div class="card-body border">
-                <div class="card-title text-center">Skills</div>
+                <h4 class="text-center mb-3">Technologies and Skills:</h4>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h5 class="text-underline">Front-End Fundamentals</h5>
+                    </div>
+                    <div class="col-6">
+                      <ul>
+                        <li>HTML</li>
+                        <li>Javascript</li>
+                        <li>CSS</li>
+                        <li>UX</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <ul>
+                        <li>Git</li>
+                        <li>Information architecture</li>
+                        <li>UX design</li>
+                        <li>GitHub</li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h5 class="text-underline">Developing with APIs</h5>
+                    </div>
+                    <div class="col-6">
+                      <ul>
+                        <li>Javascript framework</li>
+                        <li>DOM manipulation</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <ul>
+                        <li>Web-based applications</li>
+                        <li>Data extraction and retrieval</li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h5 class="text-underline">Modern Front-End Frameworks</h5>
+                    </div>
+                    <div class="col-6">
+                      <ul>
+                        <li>Structuring, positioning, and optimisation of web page content</li>
+                      </ul>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <ul>
+                        <li>React.js</li>
+                        <li>Netlify</li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <i class="fa-brands fa-html5 text-white icons"></i>
+                      <i class="fa-brands fa-css3-alt text-white icons"></i>
+                      <i class="fa-brands fa-square-js text-white icons"></i>
+                      <i class="fa-brands fa-square-git text-white icons"></i>
+                      <i class="fa-brands fa-bootstrap text-white icons"></i>
+                      <i class="fa-brands fa-node-js text-white icons"></i>
+                      <i class="fa-brands fa-react text-white icons mt-2"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
