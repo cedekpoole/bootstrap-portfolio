@@ -105,7 +105,8 @@ a:hover {
 }
 .proj-img {
     object-fit: cover;
-    height: 220px
+    height: 240px;
+    outline: 1px solid black;
 }
 .proj-img-sm {
   height: 180px;
@@ -159,9 +160,21 @@ a:hover {
 
 footer {
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-image: url("../images/hero-image.jpg");
   border-top: 1px solid var(--light-color);
   background-size: cover;
   background-position: center;
+}
+
+.contact-info {
+    margin-top: -40px;
+}
+
+.contact-icons {
+    font-size: 2rem;
+}
+
+.contact-icons:hover {
+    
 }
