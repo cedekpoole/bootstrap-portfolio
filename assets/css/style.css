@@ -4,8 +4,8 @@
     --primary-text-color: #FAF9F6;
     --bg-color: #E8D6CB;
     --dark-color: #353B3C;
-    /* --dark-color in rgb tas means to place an alpha value on it */
-    --dark-color-rgb: 53,59,60; 
+    /* --dark-color in rgb as means to place an alpha value on it */
+    --brand-color-rgb: 193, 73, 83; 
 }
 
 body {
@@ -70,7 +70,7 @@ body {
     color: var(--brand-color) !important;
     background-color: var(--primary-text-color);
     border-color: var(--brand-color);
-    box-shadow: 0 0.5em 0.5em -0.4em var(black);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--dark-color);
     transform: translateY(-0.1em);
 }
 
@@ -84,11 +84,19 @@ body {
 /* Work/Project section */
 
 .subHeading {
-    width: 40%;
+    width: 250px;
     border: 2px solid var(--brand-color);
     border-radius: 4px;
-    background-color: rgba(var(--dark-color-rgb), 0.1);
+    background-color: rgba(var(--brand-color-rgb), 0.1);
     box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.4);
+}
+
+/* .subHeading {
+    font-size: 2.5rem;
+    text-decoration: underline;
+} */
+
+.project-title {
     color: var(--dark-color);
 }
 
@@ -97,10 +105,45 @@ body {
     box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1); 
     border-radius: 4px;
     object-fit: cover;
-    height: 300px;
+    height: 30vh;
 }
 
 .project-image:hover {
     transform: scale(1.01);
     opacity: 0.7;
+}
+
+.contactContainer {
+    background-color: var(--dark-color);
+}
+
+contact-title {
+    color: var(--primary-text-color) !important;
+}
+
+.card-title {
+    font-weight: 800;
+}
+
+#about-me {
+    background-color: var(--dark-color);
+    padding-bottom: 3rem;
+}
+
+.about-me-bg {
+    background-color: var(--brand-color)
+}
+
+#contact {
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/hero-image.jpg");
+    border-top: 2px solid var(--primary-text-color);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card-text {
+    color: black;
 }
