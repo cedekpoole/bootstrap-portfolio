@@ -57,14 +57,14 @@
       </div>
     </nav>
     <!--Header/Hero image-->
-    <header class="masthead">
+    <header class="masthead mb-4">
       <div class="jumbotron jumbotron-fluid mb-1">
         <div class="container">
           <div class="row mb-3 mt-4 h-100 align-items-center">
             <div class="col-lg-6 mx-auto">
               <div class="">
                 <div class="card-body d-flex flex-column text-center">
-                  <h5 class="display-4 pb-3">Portfolio</h5>
+                  <h5 class="heading display-4 pb-3">Portfolio</h5>
                   <p class="header-text card-text">
                     Welcome to my portfolio! My name is Cameron and I am an
                     aspiring front-end web developer! :)
@@ -92,109 +92,224 @@
     <main>
       <!-- Projects Section -->
       <section id="projects">
-        <div class="container-fluid text-center p-4 d-flex flex-column">
-          <h2 class="subHeading project-title py-2 mb-4 align-self-center">
-            PROJECTS
-          </h2>
+        <div class="container-fluid">
           <div class="row">
-            <!-- Card 1 -->
-            <div class="col-lg-6">
-              <div>
-                <a href="#" class="project-link"
-                  ><img
-                    src="assets/images/project1.jpg"
-                    class="card-img-top project-image"
-                    alt="..."
-                  />
-                </a>
-                <div class="card-body text-dark">
-                  <h5 class="card-title">Refactor Challenge</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+            <div class="col-12">
+              <div class="project-header mb-4">Previous Projects</div>
+            </div>
+          </div>
+          <div class="row match-height">
+            <!-- CARD 1 (Carousel)-->
+            <div class="col-xl-6 col-lg-12 mb-4">
+              <div class="card h-100 overflow-hidden">
+                <div class="row">
+                  <div class="col-sm-6 col-12">
+                    <div class="card-img">
+                      <div
+                        id="carousel-example-2"
+                        class="carousel slide"
+                        data-ride="carousel"
+                      >
+                        <ol class="carousel-indicators">
+                          <li
+                            data-target="#carousel-example-2"
+                            data-slide-to="0"
+                            class="active"
+                          ></li>
+                          <li
+                            data-target="#carousel-example-2"
+                            data-slide-to="1"
+                          ></li>
+                          <li
+                            data-target="#carousel-example-2"
+                            data-slide-to="2"
+                          ></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/images/portfolio-screenshot.png"
+                              class="d-block proj-img w-100"
+                              alt="First slide"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/images/portfolio-screenshot2.png"
+                              class="d-block proj-img w-100"
+                              alt="Second slide"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/images/portfolio-screenshot3.png"
+                              class="d-block proj-img w-100"
+                              alt="Third slide"
+                            />
+                          </div>
+                        </div>
+                        <a
+                          class="carousel-control-prev"
+                          href="#carousel-example-2"
+                          role="button"
+                          data-slide="prev"
+                        >
+                          <span
+                            class="fa fa-angle-left icon-prev"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a
+                          class="carousel-control-next"
+                          href="#carousel-example-2"
+                          role="button"
+                          data-slide="next"
+                        >
+                          <span
+                            class="fa fa-angle-right icon-next"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12 d-flex align-items-center">
+                    <div class="card-body">
+                      <div class="align-self-center">
+                        <div class="px-3">
+                          <h4 class="card-title mb-3">Portfolio Page</h4>
+                          <p class="card-text">
+                            A portfolio page made by HTML and vanilla CSS
+                          </p>
+                          <button type="button" class="btn btn-success">
+                            Go to site ->
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- Card 2 -->
-            <div class="col-lg-6">
-              <div>
-                <a href="#" class="project-link"
-                  ><img
-                    src="assets/images/project2.jpg"
-                    class="card-img-top project-image"
-                    alt="..."
-                  />
-                </a>
-                <div class="card-body text-dark">
-                  <h5 class="card-title">Web Dev Study Guide</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+            <!-- CARD 2 -->
+            <div class="col-xl-6 col-lg-12 mb-4">
+              <div class="card h-100 overflow-hidden">
+                <div class="row">
+                  <div class="col-sm-6 col-12 d-flex align-items-center">
+                    <div class="card-body">
+                      <div class="align-self-center">
+                        <div class="px-3">
+                          <h4 class="card-title mb-3">Refactor Challenge</h4>
+                          <p class="card-text">
+                            Refactored existing code to improve accessibility
+                          </p>
+                          <button type="button" class="btn btn-danger">
+                            See it here ->
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <div class="card-img">
+                      <img
+                        class="img-fluid proj-img w-100"
+                        src="assets/images/project1.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- Card 3 -->
-            <div class="col-md-6 col-lg-4">
-              <div>
-                <a href="#" class="project-link"
-                  ><img
-                    src="assets/images/project3.png"
-                    class="card-img-top project-image"
-                    alt="..."
-                  />
-                </a>
-                <div class="card-body text-dark">
-                  <h5 class="card-title">Box Model Practice</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
+          </div>
+          <div class="row mb-5">
+            <!-- CARD 3 -->
+            <div class="col-xl-3 col-md-6 col-12 mb-4">
+              <div class="card h-100 project-link">
+                <a href=""
+                  ><div class="card-content">
+                    <img
+                      src="assets/images/project2.jpg"
+                      alt=""
+                      class="card-img-top img-fluid proj-img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Web Dev Study Guide</h4>
+                      <p class="card-text">
+                        Helpful notes created through HTML, CSS and Javascript
+                      </p>
+                    </div>
+                  </div></a
+                >
               </div>
             </div>
-            <!-- Card 4 -->
-            <div class="col-md-6 col-lg-4">
-              <div>
-                <a href="#" class="project-link"
-                  ><img
-                    src="assets/images/dog.jpg"
-                    class="card-img-top project-image"
-                    alt="..."
-                  />
-                </a>
-                <div class="card-body text-dark">
-                  <h5 class="card-title">Project Dog</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
+            <!-- CARD 4 -->
+            <div class="col-xl-3 col-md-6 col-12 mb-4">
+              <div class="card h-100 project-link">
+                <a href=""
+                  ><div class="card-content">
+                    <img
+                      src="assets/images/project3.png"
+                      alt=""
+                      class="card-img-top img-fluid proj-img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Box Model Practice</h4>
+                      <p class="card-text">
+                        Completion of a task given by freecodecamp.com
+                      </p>
+                    </div>
+                  </div></a
+                >
               </div>
             </div>
-            <!-- Card 5 -->
-            <div class="col-md-12 col-lg-4">
-              <div>
-                <a href="#" class="project-link"
-                  ><img
-                    src="assets/images/cat.jpg"
-                    class="card-img-top project-image"
-                    alt="..."
-                  />
-                </a>
-                <div class="card-body text-dark">
-                  <h5 class="card-title">Project Cat</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
+            <!-- CARD 5 -->
+            <div class="col-xl-3 col-md-6 col-12 mb-4">
+              <div class="card h-100 project-link">
+                <a href=""
+                  ><div class="card-content">
+                    <img
+                      src="assets/images/dog.jpg"
+                      alt=""
+                      class="card-img-top img-fluid proj-img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Project Dog</h4>
+                      <p class="card-text">
+                        This is a very important project involving dogs
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+            <!-- CARD 6 -->
+            <div class="col-xl-3 col-md-6 col-12 mb-4">
+              <div class="card h-100 project-link">
+                <a href=""
+                  ><div class="card-content">
+                    <img
+                      src="assets/images/cat.jpg"
+                      alt=""
+                      class="card-img-top img-fluid proj-img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Project Cat</h4>
+                      <p class="card-text">
+                        This is also a very important project
+                      </p>
+                    </div>
+                  </div></a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- About me + skills section -->
       <section id="about-me">
         <div class="container-fluid">
           <div class="row">
