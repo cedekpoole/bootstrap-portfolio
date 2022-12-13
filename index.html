@@ -26,7 +26,7 @@
     <title>Bootstrap Portfolio</title>
   </head>
   <body>
-    <!--Fixed Navigation Bar-->
+    <!--Fixed Navigation Bar that collapses when screen width is too small -->
     <nav
       id="mainNavbar"
       class="navbar navbar-dark navbar-expand-md pb-0 fixed-top"
@@ -62,7 +62,7 @@
         </ul>
       </div>
     </nav>
-    <!--Header/Hero image-->
+    <!-- Header/Hero image/jumbotron -->
     <header class="masthead mb-2">
       <div class="jumbotron jumbotron-fluid mb-1">
         <div class="container">
@@ -109,7 +109,7 @@
             </div>
           </div>
           <div class="row match-height">
-            <!-- CARD 1 (Carousel)-->
+            <!-- CARD 1 (Carousel of previous portfolio page)-->
             <div class="col-xl-6 col-lg-12 mb-4">
               <div class="card h-100 overflow-hidden">
                 <div class="row">
@@ -135,26 +135,29 @@
                             data-slide-to="2"
                           ></li>
                         </ol>
+                        <!-- Slide 1-->
                         <div class="carousel-inner" role="listbox">
                           <div class="carousel-item active">
                             <img
                               src="assets/images/portfolio-screenshot.png"
                               class="d-block proj-img w-100"
-                              alt="First slide"
+                              alt="First slide of portfolio page"
                             />
                           </div>
+                          <!-- Slide 2 -->
                           <div class="carousel-item">
                             <img
                               src="assets/images/portfolio-screenshot2.png"
                               class="d-block proj-img w-100"
-                              alt="Second slide"
+                              alt="Second slide of portfolio page"
                             />
                           </div>
+                          <!-- Slide 3 -->
                           <div class="carousel-item">
                             <img
                               src="assets/images/portfolio-screenshot3.png"
                               class="d-block proj-img w-100"
-                              alt="Third slide"
+                              alt="Third slide of portfolio page"
                             />
                           </div>
                         </div>
@@ -241,7 +244,7 @@
                       <img
                         class="img-fluid proj-img w-100"
                         src="assets/images/project1.jpg"
-                        alt="the refactoring process"
+                        alt="a diagram of the refactoring process"
                       />
                     </div>
                   </div>
@@ -281,7 +284,7 @@
                   ><div class="card-content">
                     <img
                       src="assets/images/project3.png"
-                      alt="different colored shapes"
+                      alt="different colored shapes made using the box model"
                       class="card-img-top img-fluid proj-img proj-img-sm"
                     />
                     <div class="card-body">
@@ -301,7 +304,7 @@
                   ><div class="card-content">
                     <img
                       src="assets/images/dog.jpg"
-                      alt="a dog"
+                      alt="a dog looking up into the sky"
                       class="card-img-top img-fluid proj-img proj-img-sm"
                     />
                     <div class="card-body">
@@ -444,6 +447,7 @@
       <footer id="contact">
         <div class="container-fluid">
           <div class="contact-info row">
+            <!-- Phone Number -->
             <div class="col-6 col-sm-4 mb-2">
               <div class="card h-100">
                 <div class="card-body text-center py-1">
@@ -453,6 +457,7 @@
                 </div>
               </div>
             </div>
+            <!-- Location/Address info -->
             <div class="col-6 col-sm-4 mb-2">
               <div class="card h-100">
                 <div class="card-body text-center py-1">
@@ -464,6 +469,7 @@
                 </div>
               </div>
             </div>
+            <!-- Email Address -->
             <div class="col-12 col-sm-4 mb-2">
               <div class="card h-100">
                 <div class="card-body text-center py-1">
@@ -494,7 +500,7 @@
                 ><i class="fa-brands fa-linkedin mx-3"></i
               ></a>
               <a
-                href="https://https://twitter.com"
+                href="https://twitter.com"
                 target="_blank"
                 class="icon-size"
                 ><i class="fa-brands fa-square-twitter mx-3"></i
@@ -520,7 +526,7 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
-    <!-- Some JS to change colour of navbar -->
+    <!-- Some JS to change colour of navbar when you scroll down -->
     <script>
       $(function () {
         $(document).scroll(function () {
