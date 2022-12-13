@@ -1,5 +1,14 @@
 # Bootstrap Portfolio
 
+## Table of Contents 
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Credits](#credits)
+- [License](#license)
+
 ## Description 
 
 Bootstrap is the most popular CSS framework for creating responsive and mobile-first websites. It includes HTML and CSS based design templates that you are able to customise yourself; we are given the ability to utilise prebuilt grid systems and components and incorporate a variety of JavaScript plugins into our projects (link to website is here: https://getbootstrap.com/). For my portfolio page, this framework has been used throughout and has had a significant impact on the design process in terms of speed and ease. 
@@ -10,4 +19,22 @@ The jumbotron - which can be found in the header of the page - utilises another 
 
 The 'About' section includes some personal information along with the technologies and skills I hope to know in the coming months. Following this is the footer, which contains all the information needed to contact me. Google Fonts (https://fonts.google.com/) was used to incorporate the font 'Space Mono' onto the page, and Font Awesome (https://fontawesome.com/) provided me with a number of interesting icons that can be found throughout. 
 
+## Installation
 
+N/A 
+
+## Usage
+
+![alt text](assets/images/bootstrap-portfolio.gif "Portfolio page gif")
+
+## Roadmap
+
+This repo will be added to as my skills progress. The final aim for my portfolio page is to display a number of fully functioning projects and to make it more visually appealing. I aim to finish the 'resume' tab in the near future as well. Any suggestions on how to improve the look and functionality of the page are welcome :). 
+
+## Credits
+
+N/A
+
+## License 
+
+Please refer to the LICENSE in the repo. 
